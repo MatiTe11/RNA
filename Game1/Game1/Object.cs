@@ -8,7 +8,7 @@ namespace Game1
 {
     class Object
     {
-        int x;
+        int x , y, xVel;
 
     }
 }
