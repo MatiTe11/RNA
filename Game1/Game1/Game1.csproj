@@ -39,7 +39,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Game1.cs" />
+    <Compile Include="LabScreen.cs" />
     <Compile Include="Object.cs" />
+    <Compile Include="Profesor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
