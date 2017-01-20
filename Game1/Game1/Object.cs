@@ -9,6 +9,7 @@ namespace Game1
     class Object
     {
         int x , y, xVel;
+        int c;
 
     }
 }
