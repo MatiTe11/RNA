@@ -11,11 +11,13 @@ namespace Game1
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        ScreenManager screenManager;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            screenManager = new ScreenManager(graphics);
         }
 
         /// <summary>
@@ -41,6 +43,7 @@ namespace Game1
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            screenManager.LoadContent(Content);
         }
 
         /// <summary>
@@ -63,6 +66,8 @@ namespace Game1
                 Exit();
 
             // TODO: Add your update logic here
+            screenManager.Update(gameTime);
+
 
             base.Update(gameTime);
         }
@@ -76,6 +81,8 @@ namespace Game1
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+
+            screenManager.Draw(spriteBatch);
 
             base.Draw(gameTime);
         }

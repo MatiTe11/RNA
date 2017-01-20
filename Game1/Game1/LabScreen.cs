@@ -15,14 +15,14 @@ namespace Game1
         Texture2D background;
         Profesor profesor;
 
-        public LabScreen(Texture2D background)
+        public LabScreen()
         {
-            this.background = background;
+            
         }
 
         public void LoadContent(ContentManager Content)
         {
-            background = Content.Load<Texture2D>("background");
+            //background = Content.Load<Texture2D>("background");
         }
 
         public void Update(GameTime gameTime)
