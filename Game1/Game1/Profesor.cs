@@ -12,13 +12,18 @@ namespace Game1
 {
     class Profesor : Object
     {
-        public Profesor()
-        {
+        Texture2D profTex;
+        int screenWidth, screenHeight;
 
+        public Profesor(int screenWidth, int screenHeight)
+        {
+            this.screenHeight = screenHeight;
+            this.screenWidth = screenWidth;
         }
 
         public void LoadContent(ContentManager Content)
         {
+            profTex = Content.Load<Texture2D>("profTex");
 
         }
 
