@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game1
 {
-    class Object1
+    class Object
     {
     }
 }
